@@ -6,9 +6,7 @@ Code for paper " Merge and Label: A Novel Neural Network Architecture for Nested
 1. Download glove embeddings glove.840B.300d.zip from https://nlp.stanford.edu/projects/glove/ and extract into 
 directory ./data/pre_trained_embeddings/glove/
 
-2. 
-
-
+2. Get access to ACE 2005 corpus (https://catalog.ldc.upenn.edu/LDC2006T06) and/or the OntoNotes corpus(https://catalog.ldc.upenn.edu/LDC2013T19). Preprocess data to same format as example datafiles in ./data/problems/ACE05/data/. Train/val/test splits for the OntoNotes corpus are standard. Splits for ACE 2005 corpus follow https://arxiv.org/abs/1810.09073 and are provided in ./data/problems/ACE05/splits
 
 ## Training a model
 
