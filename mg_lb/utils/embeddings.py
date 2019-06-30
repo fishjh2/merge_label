@@ -206,65 +206,58 @@ class pretrained_vectors(object):
 
     def get_vectors(self):
         if not os.path.isfile(self.path_pt):
+            print('Converting .txt embedding file to torch file')
             # str call is necessary for Python 2/3 compatibility, since
             # argument must be Python 2 str (Python 3 bytes) or
             # Python 3 str (Python 2 unicode)
-            itos, vectors, dim = [], array.array(str('d')), None
+            itos, dim, vectors = [], None, []
 
             # Try to read the whole file with utf-8 encoding.
             binary_lines = False
-            try:
-                with io.open(self.path, encoding="utf8") as f:
-                    lines = [line for line in f]
-            # If there are malformed lines, read in binary mode
-            # and manually decode each word from utf-8
-            except:
-                print("Could not read {} as UTF8 file, "
-                      "reading file as bytes and skipping "
-                      "words with malformed UTF8.".format(self.path))
-                with open(self.path, 'rb') as f:
-                    lines = [line for line in f]
-                binary_lines = True
 
             print("Building Pytorch vectors from {}".format(self.path))
-            for line in tqdm(lines, total=len(lines)):
-                # Explicitly splitting on " " is important, so we don't
-                # get rid of Unicode non-breaking spaces in the vectors.
-                entries = line.rstrip().split(b" " if binary_lines else " ")
+            with io.open(self.path, encoding="utf8") as f:
+                for ix, line in enumerate(tqdm(f)):
 
-                word, entries = entries[0], entries[1:]
-                if dim is None and len(entries) > 1:
-                    dim = len(entries)
-                elif len(entries) == 1:
-                    print("Skipping token {} with 1-dimensional vector {}; likely a header".format(word, entries))
-                    continue
-                elif dim != len(entries):
-                    raise RuntimeError(
-                        "Vector for token {} has {} dimensions, but previously "
-                        "read vectors have {} dimensions. All vectors must have "
-                        "the same number of dimensions.".format(word, len(entries), dim))
+                    # Explicitly splitting on " " is important, so we don't
+                    # get rid of Unicode non-breaking spaces in the vectors.
+                    entries = line.rstrip().split(b" " if binary_lines else " ")
 
-                if binary_lines:
-                    try:
-                        if isinstance(word, six.binary_type):
-                            word = word.decode('utf-8')
-                    except:
-                        print("Skipping non-UTF8 token {}".format(repr(word)))
+                    word, entries = entries[0], entries[1:]
+                    if dim is None and len(entries) > 1:
+                        dim = len(entries)
+                    elif len(entries) == 1:
+                        print("Skipping token {} with 1-dimensional vector {}; likely a header".format(word, entries))
                         continue
-                vectors.extend(float(x) for x in entries)
-                itos.append(word)
+                    elif dim != len(entries):
+                        raise RuntimeError(
+                            "Vector for token {} has {} dimensions, but previously "
+                            "read vectors have {} dimensions. All vectors must have "
+                            "the same number of dimensions.".format(word, len(entries), dim))
+
+                    if binary_lines:
+                        try:
+                            if isinstance(word, six.binary_type):
+                                word = word.decode('utf-8')
+                        except:
+                            print("Skipping non-UTF8 token {}".format(repr(word)))
+                            continue
+                    vectors.append(torch.tensor([float(x) for x in entries]).unsqueeze(0))
+
+                    itos.append(word)
 
             self.word_list = itos
             self.ix_lookup = {word: i for i, word in enumerate(itos)}
-            self.vectors = torch.Tensor(vectors).view(-1, dim)
+            vectors = torch.cat(vectors, dim=0)
+            self.vectors = vectors
             self.dim = dim
             print('Saving vectors to {}'.format(self.path_pt))
             torch.save((self.word_list, self.ix_lookup, self.vectors, self.dim), self.path_pt)
         else:
             self.word_list, self.ix_lookup, self.vectors, self.dim = torch.load(self.path_pt)
 
-# Lookup dictionary for pretrained embeddings (path to .txt file not .pt file)
 
+# Lookup dictionary for pretrained embeddings (path to .txt file not .pt file)
 embedding_paths = {
     'glove': './data/pre_trained_embeddings/glove/glove.840B.300d.txt'
 }
