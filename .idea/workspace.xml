@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cd41627-168b-4cd6-b092-f3e453b8ea63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/eval_demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/eval_demo.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mg_lb/eval/losses.py" beforeDir="false" afterPath="$PROJECT_DIR$/mg_lb/eval/losses.py" afterDir="false" />
-    </list>
+    <list default="true" id="4cd41627-168b-4cd6-b092-f3e453b8ea63" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mg_lb/eval/losses.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
@@ -38,11 +34,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mg_lb/data_loading/fs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2493">
+              <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -158,12 +166,12 @@
       <option name="presentableId" value="Default" />
       <updated>1561916170825</updated>
       <workItem from="1561916172487" duration="970000" />
-      <workItem from="1561919217000" duration="1213000" />
+      <workItem from="1561919217000" duration="1846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2183000" />
+    <option name="totallyTimeSpent" value="2816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="17" width="1853" height="1062" extended-state="6" />
@@ -199,7 +207,7 @@
     <entry file="file://$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -222,6 +230,16 @@
           <caret line="204" column="31" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mg_lb/data_loading/fs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2493">
+          <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
