@@ -4,7 +4,7 @@ Code for paper " Merge and Label: A Novel Neural Network Architecture for Nested
 ## Notes on reproducing results
 
 1. Download glove embeddings glove.840B.300d.zip from https://nlp.stanford.edu/projects/glove/ and extract into 
-directory mg_lb/data/pre_trained_embeddings/glove/
+directory ./data/pre_trained_embeddings/glove/
 
 2. 
 
