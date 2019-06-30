@@ -130,6 +130,9 @@ def add_flair_embeddings(data, dset, problem, fl_embeds):
         file_path = './data/problems/' + problem + '/flair_embeds/' \
                     + fl + '/' + dset
 
+        if not os.path.exists(file_path):
+            generate_flair(problem, fl)
+
         fl_dict = SqliteDict(file_path)
 
         for k in data.keys():

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cd41627-168b-4cd6-b092-f3e453b8ea63" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mg_lb/utils/embeddings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mg_lb/utils/embeddings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eval_demo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/eval_demo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mg_lb/eval/losses.py" beforeDir="false" afterPath="$PROJECT_DIR$/mg_lb/eval/losses.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mg_lb/utils/embeddings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+            <state relative-caret-position="2799">
+              <caret line="213" selection-start-line="213" selection-end-line="213" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -24,7 +26,36 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mg_lb/eval/losses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="204" column="31" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>def add_flair_embeddings</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +64,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mg_lb/utils/embeddings.py" />
+        <option value="$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py" />
+        <option value="$PROJECT_DIR$/mg_lb/eval/losses.py" />
       </list>
     </option>
   </component>
@@ -79,6 +112,12 @@
               <item name="merge_label" type="b2602c69:ProjectViewProjectNode" />
               <item name="merge_label" type="462c0819:PsiDirectoryNode" />
               <item name="mg_lb" type="462c0819:PsiDirectoryNode" />
+              <item name="eval" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="merge_label" type="b2602c69:ProjectViewProjectNode" />
+              <item name="merge_label" type="462c0819:PsiDirectoryNode" />
+              <item name="mg_lb" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -89,6 +128,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -118,12 +158,12 @@
       <option name="presentableId" value="Default" />
       <updated>1561916170825</updated>
       <workItem from="1561916172487" duration="970000" />
-      <workItem from="1561919217000" duration="12000" />
+      <workItem from="1561919217000" duration="1213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="982000" />
+    <option name="totallyTimeSpent" value="2183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="17" width="1853" height="1062" extended-state="6" />
@@ -156,12 +196,32 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mg_lb/data_loading/fl_embeds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mg_lb/utils/embeddings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="192" lean-forward="true" selection-start-line="192" selection-end-line="192" />
+        <state relative-caret-position="2799">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mg_lb/eval/losses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="204" column="31" selection-start-line="204" selection-start-column="31" selection-end-line="204" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

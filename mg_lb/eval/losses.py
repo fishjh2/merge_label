@@ -198,8 +198,11 @@ def f1_ace(predictions, labels, remove_np=True, remove_unk=True):
             else:
                 cl_wrong += 1
 
-    prec = p / len(sep_ps)
-    recall = p / len(sep_ls)
+    if len(sep_ps) > 0:
+        prec = p / len(sep_ps)
+        recall = p / len(sep_ls)
+    else:
+        prec, recall = 0.0, 0.0
 
     f1 = calc_f1(prec, recall)
 
