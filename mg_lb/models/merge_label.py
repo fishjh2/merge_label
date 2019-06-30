@@ -251,7 +251,7 @@ class network_encoder(nn.Module):
         ksize = self.kernel_sizes[-1]
 
         if self.reuse_weights:
-            final_s_layer = self.update_layers[i]
+            final_s_layer = self.update_layers[i].acc_embeds
         else:
             final_s_layer = self.structure_layer
 
