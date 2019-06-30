@@ -1,0 +1,29 @@
+sentences	Ents_0	Ents_1	Ents_2	Corefs_0	Corefs_1	Corefs_2
+---NEW-ARTICLE---						
+newswire						
+---SENT-SPLIT---						
+A						
+test	B-ORG			0.0		
+sentence	I-ORG			0.0		
+with						
+some						
+corefs	B-ORG			1.0		
+---SENT-SPLIT---						
+A						
+test	B-ORG			0.0		
+sentence	I-ORG			0.0		
+.						
+---NEW-ARTICLE---						
+newswire						
+---SENT-SPLIT---						
+A						
+test	B-ORG			0.0		
+sentence	I-ORG			0.0		
+with						
+some						
+corefs	B-ORG			1.0		
+---SENT-SPLIT---						
+A						
+test	B-ORG			0.0		
+sentence	I-ORG			0.0		
+.						
