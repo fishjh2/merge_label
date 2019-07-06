@@ -1,5 +1,4 @@
-Code for paper "Merge and Label: A Novel Neural Network Architecture for Nested NER" in ACL 2019
-
+Code for paper ["Merge and Label: A Novel Neural Network Architecture for Nested NER"] (https://arxiv.org/abs/1907.00464) in ACL 2019
 
 ## Notes on reproducing results
 
